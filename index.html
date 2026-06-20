@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* This pulls your background image from your folder */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        /* Dark overlay to make text readable over your background image */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 1.4rem;
+            margin: 0 0 25px 0;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .links-container {
+            width: 100%;
+        }
+        .link-btn {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .link-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <!-- Local Profile Picture -->
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Connect With Me</h1>
+
+        <!-- Your 4 Custom Links -->
+        <div class="links-container">
+            <a href="https://shimbaonishi.xyz/" target="_blank" class="link-btn"> Portfolio</a>
+            <a href="https://https://www.instagram.com/shimb_e/" target="_blank" class="link-btn"> Instagram</a>
+            <a href="https://https://www.flickr.com/photos/204539302@N06/" target="_blank" class="link-btn"> Flickr</a>
+            <a href="https://www.linkedin.com/in/shimba-onishi-007982250/" target="_blank" class="link-btn"> LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
